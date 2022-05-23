@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -17,11 +18,11 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class MsgNotice {
+public class MsgNotice implements Serializable {
+
 
     private boolean success;
     private LocalDateTime time;
-    private String nums;
-
-
+    private String allNums;
+    private String addNums;
 }

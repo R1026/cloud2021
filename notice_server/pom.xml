@@ -9,6 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<!--<packaging>jar</packaging>-->
+
 	<groupId>com.dx.simple</groupId>
 	<artifactId>notice_server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -41,6 +43,11 @@
 			<artifactId>common_base</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.tencentcloudapi</groupId>
+			<artifactId>tencentcloud-sdk-java</artifactId>
+			<version>3.1.270</version><!-- 注：这里只是示例版本号（可直接使用），可获取并替换为 最新的版本号，注意不要使用4.0.x版本（非最新版本） -->
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -49,14 +56,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
 	</build>
 
